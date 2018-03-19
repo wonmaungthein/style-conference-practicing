@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing</title>
+    <script>
+        // window.onload = function () {
+        //     var heading = document.createElement("h1");
+        //     var heading_text = document.createTextNode("Big Head!");
+        //     heading.appendChild(heading_text);
+        //     document.body.appendChild(heading);
+        // }
+// <!-- 
+//         window.onload = function () {
+//             var heading = document.createElement("h2");
+//             // var paragraph = document.createElement("p");
+//             // var paragraph_text = document.createTextNode("This is a paragraph");
+//             var heading_text = document.createTextNode("small head");
+//             heading.appendChild(heading_text);
+//             // paragraph.appendChild(paragraph_text);
+//             document.body.appendChild(heading);
+//         } -->
+<!-- </script> -->
+<!-- </head> -->
+
+<!-- <body onload="window.alert('Welcome to my home page!');"> -->
+
+<!-- <div>
+        <h1>My testing file</h1>
+        <br>
+        <embed>what does it embed do </div>
+    <hr>
+    <p>
+        what is hr tag
+        <img>this is image tag,
+        <p class="selectingPtag">one</p>
+        <p class="selectingPtag">two</p>
+        <p class="selectingPtag">three</p>
+        <p class="selectingPtag">four</p>
+        <p class="selectingPtag">five</p>
+    </p>
+
+    <input> this is input </input>
+    <link> this is a link </link>
+    <meta>meta tag </meta>
+    <param> param tag </param>
+    <source> source tag.. first time using it.. don't know exactly what it does </source>
+    <wbr> wbr tag </wbr>
+
+    <p>Testing, a lot things.. it was good to meet friends.br
+        <br> what is going on with me.. don't know exactly but i enjoy meeting peple.
+    </p>
+    </div>
+</body>
+<script>
+    const paragraph = document.getElementsByTagName("div");
+    alert(paragraph[0].nodeName);
+</script> -->
+
+<!-- </body> -->
+
+<!-- </html> -->
+<!-- -->
+
+
+<!-- Here are some methods to practice -->
+<!-- <script>
+
+
+    document.getElementById(id) document.getElementsByTagName(name) document.createElement(name) parentNode.appendChild(node)
+    element.innerHTML element.style.left element.setAttribute() element.getAttribute() element.addEventListener() window.content
+    window.onload window.dump() window.scrollTo()
+</script> -->
+
+
+
+<!-- This will be a page to practice about DOM below -->
+
+<html>
+
+<head>
+    <title>DOM Tests</title>
+    <script type="application/javascript">
+        function setBodyAttr(attr, value) {
+            if (document.body) eval('document.body.' + attr + '="' + value + '"');
+            else notSupported();
+        }
+    </script>
+</head>
+<style>
+    div {
+        margin: .6in;
+        height: 600;
+        padding: 6rem;
+    }
+
+    tt {
+        /* border: 2px solid black; */
+        font-size: 40px;
+    }
+
+    select {
+        font-size: 250px;
+
+    }
+
+    span {
+        margin: 3rem;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 8%;
+    }
+
+    form {
+        height: 300px;
+        width: 100%;
+    }
+
+    option {
+        font-size: 30px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <div>
+        <p>
+            <b>
+                <tt>text</tt>
+            </b>
+        </p>
+        <form>
+            <select onChange="setBodyAttr('text',
+        this.options[this.selectedIndex].value);">
+                <option value="black">black
+                    <option value="darkblue">darkblue
+                        <option value="green">Green
+            </select>
+            <p>
+                <b>
+                    <tt>bgColor</tt>
+                </b>
+            </p>
+            <select onChange="setBodyAttr('bgColor',
+        this.options[this.selectedIndex].value);">
+                <option value="white">white
+                    <option value="lightgrey">gray
+                        <option value="green">green</option>
+                        <option value="orange">orange</option>
+                        <option value="yellow">yellow</option>
+            </select>
+            <p>
+                <b>
+                    <tt>link</tt>
+                </b>
+            </p>
+            <select onChange="setBodyAttr('link',
+        this.options[this.selectedIndex].value);">
+                <option value="blue">blue
+
+            </select>
+            <span>
+                <small>
+                    <a href="http://www.brownhen.com/dom_api_top.html" id="sample">
+                        (sample link)</a>
+                </small>
+            </span>
+            <span>
+                <big>
+                    <a href="https://wizardly-feynman-8e60e6.netlify.com" id="myportfolio">My portfolio link</a>
+                </big>
+            </span>
+            <br>
+        </form>
+
+
+        <form>
+            <input type="button" value="version" onclick="ver()" />
+        </form>
+    </div>
+</body>
+
+</html>
